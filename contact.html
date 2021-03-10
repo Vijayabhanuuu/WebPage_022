@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ 
+
+
+input[type=text], select, textarea {
+color: #000;
+font-size: medium;
+  width: 200%;
+  padding: 12px;
+  border: 3px solid rgb(36, 112, 102);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.fa-instagram {
+			  background: #8a3ab9;
+			}
+
+</style>
+</head>
+<body>
+<a href="https://www.instagram.com/" class="fa fa-instagram"> Instagram</a>
+
+
+<h3 style="text-align: center;" >Contact Form </h3>
+
+
+<div class="container">
+
+
+  <form action="">
+   
+    <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+
+    <label for="lname">Last Name</label><br>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+
+    <label for="country">Country</label><br>
+    <select id="country" name="country"><br>
+      <option value="australia">Australia</option><br>
+      <option value="canada">Canada</option><br>
+      <option value="usa">USA</option><br>
+      <option value="India">India</option><br>
+
+    </select>
+
+   <br> <label for="subject">Subject</label><br>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+   <br> <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
