@@ -1,6 +1,5 @@
 body {
     font-size: 18px;
-    font-family: "Arapey",sans-serif;
 }
 
 p {
@@ -24,9 +23,9 @@ header h2 {
 }
 
 #container {
-    max-width: 600px;
+    max-width: 800px;
     margin: 30px auto;
-    margin-top: 15%;
+    margin-top: 8%;
     border: 1px solid #ccc;
     background: #fff;
 }

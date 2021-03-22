@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <title>BMI</title>
+  <style>
+    body {
+      float: center;
+    }
+
+    h1 {
+      margin-top: auto;
+      text-align: center;
+    }
+
+    .container {
+      margin: 90px auto;
+      padding: 80px;
+      width: 340px;
+      height: 300px;
+      float: center;
+      background-color: rgb(120, 194, 228);
+    }
+
+    button {
+      margin: auto;
+
+    }
+
+    .btn {
+      border: 1px solid black;
+    }
+  </style>
+
+</head>
+
+
+<body>
+  <div id="app">
+    <script type="text/babel">
+
+      class App extends React.Component {
+
+        render() {
+          return (
+            <div class="container">
+              <form>
+
+                <h1>BMI calculator</h1>
+                <p>Enter weight:</p>
+                <input
+                  type="text"
+                />
+                <p>Enter Height:</p>
+                <input
+                  type="number" placeholder="feets"
+                />
+                <input
+                  type="number" placeholder="inches"
+                />
+              </form>
+              <br></br>
+              <button onClick={() => alert("calculating BMI")} type="button">Compute</button>
+
+
+            </div>
+
+
+
+
+          );
+        }
+      }
+
+
+      ReactDOM.render(<App />, document.querySelector("#app"));
+
+    </script>
+</body>
+
+</html>
